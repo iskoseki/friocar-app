@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 function Testimonials() {
   return (
     <section className="bg-white">
@@ -11,7 +11,7 @@ function Testimonials() {
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
           <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 alt="Man"
                 src="https://lh3.googleusercontent.com/a-/ALV-UjV5Hn5kYQL9NKM36Iy5lv3h_wTfBO6GQ8EVIPEv3DH6gdh1=w120-h120-p-rp-mo-br100"
                 className="h-14 w-14 rounded-full object-cover"
@@ -76,7 +76,7 @@ function Testimonials() {
 
           <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 alt="Man"
                 src="https://lh3.googleusercontent.com/a/ACg8ocJJq5Y2u1qqD_qm-Xqvzfa91liiV9dqjPFuGQshJ8ah=w72-h72-p-rp-mo-br100"
                 className="h-14 w-14 rounded-full object-cover"
@@ -140,7 +140,7 @@ function Testimonials() {
 
           <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 alt="Man"
                 src="https://lh3.googleusercontent.com/a-/ALV-UjV8TUNYquOGafyoNEH5nPpEJMw1PXT-rzmqNmnTHr3enYoX=w120-h120-p-rp-mo-br100"
                 className="h-14 w-14 rounded-full object-cover"
