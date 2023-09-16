@@ -1,4 +1,4 @@
-export const PorqueNos = ()=>{
+export const Porquenos = ()=>{
     return (
         <section className="bg-gray-900 text-white">
   <div
