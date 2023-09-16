@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 function Testimonials() {
-  const PabloImg =
-    "https://lh3.googleusercontent.com/a-/ALV-UjV5Hn5kYQL9NKM36Iy5lv3h_wTfBO6GQ8EVIPEv3DH6gdh1=w120-h120-p-rp-mo-br100";
-  const German =
-    "https://lh3.googleusercontent.com/a/ACg8ocJJq5Y2u1qqD_qm-Xqvzfa91liiV9dqjPFuGQshJ8ah=w72-h72-p-rp-mo-br100";
+  const PabloImg = "/testimonials/pablo.png";
+  const German = "/testimonials/german.png";
   const DamianImg = "/testimonials/damian.png";
 
   return (
