@@ -1,8 +1,10 @@
+import { Suspense } from "react";
 import Footer from "./Footer";
 import Navigation from "./Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import { Anuncio } from "./components/Anuncio";
+import Loading from "./Loading";
+
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600"],
   style: ["italic", "normal"],
@@ -19,8 +21,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Navigation />
-        <div className="pt-[88px]">{children}</div>
-
+        <Suspense fallback={<Loading />}>
+          <div className="pt-[88px]">{children}</div>
+        </Suspense>
         <Footer />
       </body>
     </html>

@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <div className="animate__fadeInUp">
-      <header className="fixed rounded-b-xl bg-red-600 inset-x-0 top-0 z-50">
+      <header className="fixed  bg-red-600 inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-4 lg:px-8"
           aria-label="Global"

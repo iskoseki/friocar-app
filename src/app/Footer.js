@@ -36,10 +36,10 @@ function Footer() {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mx-auto max-w-sm lg:max-w-none">
             <p className="hidden md:block mt-4 text-center italic text-slate-100 lg:text-left lg:text-lg">
-              "Contamos con un amplio taller equipado con todas las herramientas
+              Contamos con un amplio taller equipado con todas las herramientas
               para todo tipo de vehículos y las normas de seguridad
               correspondientes utilizando siempre productos de primera calidad y
-              respetando el medio ambiente."
+              respetando el medio ambiente.
             </p>
 
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
@@ -175,25 +175,25 @@ function Footer() {
             <div className=" ">
               <strong className="font-medium text-slate-200">Contacto</strong>
 
-              <ul class="mt-6 space-y-1 text-sm">
+              <ul className="mt-6 space-y-1 text-sm">
                 <li>
-                  <a class="flex  gap-1.5 rtl:sm:justify-end" href="/">
+                  <a className="flex  gap-1.5 rtl:sm:justify-end" href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 shrink-0 text-slate-200"
+                      className="h-5 w-5 shrink-0 text-slate-200"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
+                      strokeWidth="2"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
 
-                    <span class="flex-1 text-slate-200">
+                    <span className="flex-1 text-slate-200">
                       info@friocarrosario.com.ar
                     </span>
                   </a>
@@ -201,50 +201,50 @@ function Footer() {
 
                 <li>
                   <a
-                    class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="/"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 shrink-0 text-slate-200"
+                      className="h-5 w-5 shrink-0 text-slate-200"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
+                      strokeWidth="2"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
 
-                    <span class="flex-1 text-slate-200">03414380965</span>
+                    <span className="flex-1 text-slate-200">03414380965</span>
                   </a>
                 </li>
 
-                <li class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                <li className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 shrink-0 text-slate-200"
+                    className="h-5 w-5 shrink-0 text-slate-200"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                     />
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
 
-                  <address class="-mt-0.5 flex-1 not-italic text-slate-200">
+                  <address className="-mt-0.5 flex-1 not-italic text-slate-200">
                     Santa Fe 4514, Rosario
                   </address>
                 </li>
