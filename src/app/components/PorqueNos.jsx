@@ -1,4 +1,4 @@
-function Porquenos(){
+export const Porquenos = ()=>{
     return (
         <section className="bg-gray-900 text-white">
   <div
@@ -212,5 +212,3 @@ function Porquenos(){
 </section>
     )
 }
-
-export default Porquenos;
