@@ -1,4 +1,4 @@
- const Porquenos = ()=>{
+function Porquenos(){
     return (
         <section className="bg-gray-900 text-white">
   <div
