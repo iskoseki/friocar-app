@@ -3,20 +3,20 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import logo from "/public/logo.svg";
 const navigation = [
   { name: "Principal", href: "/" },
   { name: "Servicios", href: "servicios" },
   { name: "Nosotros", href: "about" },
   { name: "Contacto", href: "contacto" },
 ];
-
-export default function Example() {
+//animation import
+import "animate.css";
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="">
-      <header className="fixed bg-red-600 inset-x-0 top-0 z-50">
+    <div className="animate__fadeInUp">
+      <header className="fixed rounded-b-xl bg-red-600 inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-4 lg:px-8"
           aria-label="Global"

@@ -9,7 +9,7 @@ function Cta() {
             Slow-carb next level shoindxgoitch ethical authentic, scenester
             sriracha forage.
           </h1>
-          <button class="flex-shrink-0 text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
+          <button class="flex-shrink-0 text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-red-700 rounded text-lg mt-10 sm:mt-0">
             Button
           </button>
         </div>

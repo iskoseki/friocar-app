@@ -11,6 +11,7 @@ import "./styles.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 export default function Carrousel() {
   return (
@@ -21,101 +22,84 @@ export default function Carrousel() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        classNameName="mySwiper"
       >
         <SwiperSlide>
-          <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                  Servicio
-                  <br class="hidden lg:inline-block" />
-                  Calefacción{" "}
+          {/*
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+*/}
+
+          <section className="relative bg-[url(https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHRhbGxlciUyMG1lY2FuaWNvfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60)] bg-cover bg-center w-full bg-no-repeat">
+            <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+
+            <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+              <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <h1 className="text-3xl font-extrabold sm:text-5xl">
+                  Let us find your
+                  <strong className="block font-extrabold text-rose-700">
+                    Forever Home.
+                  </strong>
                 </h1>
-                <p class="mb-8 leading-relaxed">
-                  Reparamos todo tipo de calefacción en vehículos. Revisamos
-                  fallas por computadora. Contamos con amplia experiencia.
+
+                <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nesciunt illo tenetur fuga ducimus numquam ea!
                 </p>
-                <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-                    Button
-                  </button>
-                  <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                    Button
-                  </button>
+
+                <div className="mt-8 flex flex-wrap gap-4 text-center">
+                  <a
+                    href="#"
+                    className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                  >
+                    Get Started
+                  </a>
+
+                  <a
+                    href="#"
+                    className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                  >
+                    Learn More
+                  </a>
                 </div>
-              </div>
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img
-                  class="object-cover object-center rounded"
-                  alt="hero"
-                  src="https://dummyimage.com/720x600"
-                />
               </div>
             </div>
           </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                  Direcciones
-                  <br class="hidden lg:inline-block" />
-                  hidráulicas
+          <section className="relative bg-[url(https://images.unsplash.com/photo-1632733711679-529326f6db12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80 )] bg-cover bg-center w-full bg-no-repeat">
+            <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+
+            <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+              <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <h1 className="text-3xl font-extrabold sm:text-5xl">
+                  Let us find your
+                  <strong className="block font-extrabold text-rose-700">
+                    Forever Home.
+                  </strong>
                 </h1>
-                <p class="mb-8 leading-relaxed">
-                  Reparación de direcciones hidráulicas en vehículos de toda
-                  gama.
+
+                <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nesciunt illo tenetur fuga ducimus numquam ea!
                 </p>
-                <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-                    Button
-                  </button>
-                  <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                    Button
-                  </button>
+
+                <div className="mt-8 flex flex-wrap gap-4 text-center">
+                  <a
+                    href="#"
+                    className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                  >
+                    Get Started
+                  </a>
+
+                  <a
+                    href="#"
+                    className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                  >
+                    Learn More
+                  </a>
                 </div>
-              </div>
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img
-                  class="object-cover object-center rounded"
-                  alt="hero"
-                  src="https://dummyimage.com/720x600"
-                />
-              </div>
-            </div>
-          </section>
-        </SwiperSlide>
-        <SwiperSlide>
-          <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                  Servicio de
-                  <br class="hidden lg:inline-block" />
-                  Tren delantero
-                </h1>
-                <p class="mb-8 leading-relaxed">
-                  Realizamos una revisión y diagnóstico del tren delantero de tu
-                  vehículo, para luego desarrollar el trabajo de reparación en
-                  forma certera.
-                </p>
-                <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-                    Button
-                  </button>
-                  <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                    Button
-                  </button>
-                </div>
-              </div>
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img
-                  class="object-cover object-center rounded"
-                  alt="hero"
-                  src="https://dummyimage.com/720x600"
-                />
               </div>
             </div>
           </section>

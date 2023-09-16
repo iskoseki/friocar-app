@@ -2,7 +2,7 @@ import Footer from "./Footer";
 import Navigation from "./Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-
+import { Anuncio } from "./components/Anuncio";
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600"],
   style: ["italic", "normal"],
@@ -19,7 +19,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Navigation />
-        {children}
+        <div className="pt-[88px]">{children}</div>
+
         <Footer />
       </body>
     </html>
