@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Button } from "flowbite-react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +12,7 @@ import "./styles.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
+import Btn from "./Btn";
 
 export default function Carrousel() {
   return (
@@ -40,9 +41,7 @@ export default function Carrousel() {
                   authentic tumeric truffaut hexagon try-hard chambray.
                 </p>
                 <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-                    Button
-                  </button>
+                  <Btn>Hola</Btn>
                   <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                     Button
                   </button>
@@ -74,6 +73,13 @@ export default function Carrousel() {
                   authentic tumeric truffaut hexagon try-hard chambray.
                 </p>
                 <div class="flex justify-center">
+                  <Button
+                    size="xs"
+                    gradientMonochrome="failure"
+                    className="mt-4 "
+                  >
+                    Ver mas
+                  </Button>
                   <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
                     Button
                   </button>

@@ -1,8 +1,7 @@
 "use client";
 
-import CarrouselServicios from "../components/CarrouselServicios";
+import CatalogServices from "../components/CatalogServices";
 import Cta from "../components/cta";
-import Indicators from "./Indicators";
 
 export const ModalServicio = () => {
   return (
@@ -100,7 +99,12 @@ export const HeaderServices = () => {
             reparación de tren delantero, electricidad y más
           </p>
 
-          <ModalServicio />
+          <a
+            href="#"
+            className="inline-block rounded bg-red-600  px-8çç py-3 text-sm font-medium text-white transition hover:bg-red-700 focus:outline-none focus:ring focus:ring-yellow-400"
+          >
+            Ver todos
+          </a>
         </div>
         <div class="grid md:grid-cols-2 gap-8">
           <div
@@ -215,10 +219,9 @@ function Servicios() {
     <>
       <HeaderServices />
 
-      <CarrouselServicios />
+      <CatalogServices />
 
       <Cta />
-      <Indicators />
     </>
   );
 }

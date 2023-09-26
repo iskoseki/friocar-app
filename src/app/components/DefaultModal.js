@@ -1,7 +1,6 @@
 // components/DefaultModal.js
 import React, { useState } from "react";
 import { Button, Modal } from "flowbite-react";
-import Indicators from "../servicios/Indicators";
 
 export default function DefaultModal() {
   const [openModal, setOpenModal] = useState(undefined);
@@ -62,7 +61,6 @@ export default function DefaultModal() {
                 </a>
               </div>
             </div>
-            <Indicators />
           </section>
         </Modal.Body>
         <Modal.Footer>
