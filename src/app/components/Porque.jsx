@@ -1,3 +1,5 @@
+import Btn from "./Btn"
+
 export const Porque = ()=>{
     return (
         <section className="bg-gray-900 text-white rounded-t-xl drop-shadow-2xl">
@@ -201,13 +203,9 @@ export const Porque = ()=>{
     </div>
 
     <div className="mt-12 text-center">
-      <a
-        href="#"
-        className="inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-700 focus:outline-none focus:ring focus:ring-yellow-400"
-      >
-        Get Started Today
-      </a>
+     <Btn color={"red"}>Nuestros servicios</Btn>
     </div>
+    
   </div>
 </section>
     )

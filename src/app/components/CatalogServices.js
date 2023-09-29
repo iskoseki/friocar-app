@@ -1,6 +1,6 @@
+"use client";
 import React from "react";
-// import required modules
-import DefaultModal from "./DefaultModal";
+import { Button } from "flowbite-react";
 
 async function loadServices() {
   const res = await fetch("http://localhost:3000/api/services");
@@ -11,7 +11,7 @@ export default async function CatalogServices() {
   const data = await loadServices();
   return (
     <>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font" suppressHydrationWarning>
         <div className="container px-6 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -28,21 +28,31 @@ export default async function CatalogServices() {
           <div className="flex flex-wrap -m-4">
             {data.map((x) => {
               return (
-                <div key={x.id} className="xl:w-1/4 md:w-1/2 p-4">
+                <div
+                  key={x.id}
+                  className=" xl:w-1/3   md:w-1/2  p-4 hover:scale-105 transition-all"
+                >
                   <div className="bg-gray-100 p-6 rounded-lg">
                     <img
                       className="h-40 rounded w-full object-cover object-center mb-6"
-                      src="https://ss-static-01.esmsv.com/id/100847/productos/obtenerimagen/?id=54&useDensity=true&width=2880&height=1580&tipoEscala"
+                      src={x.cover}
                       alt="content"
                     />
                     <h3 className="tracking-widest text-red-500 text-xs font-medium title-font">
-                      SUBTITLE
+                      SERVICIO DE
                     </h3>
                     <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                       {x.title}
                     </h2>
                     <p className="leading-relaxed text-base">{x.description}</p>
-                    <DefaultModal />
+                    <Button
+                      size="xs"
+                      href={`/servicios/${x.id}`}
+                      gradientMonochrome="failure"
+                      className="mt-4 "
+                    >
+                      Ver mas
+                    </Button>
                   </div>
                 </div>
               );
