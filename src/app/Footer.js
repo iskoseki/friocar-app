@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
+import { FooterLinks } from "./constants";
 
 function Footer() {
   return (
@@ -107,7 +108,7 @@ function Footer() {
 
               <a
                 className="text-slate-200 transition hover:text-gray-700/75"
-                href=""
+                href="https://github.com/kosekijsx/friocar-app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -134,41 +135,16 @@ function Footer() {
               <strong className="font-medium text-slate-200"> Services </strong>
 
               <ul className="mt-6 space-y-1">
-                <li>
-                  <a
-                    className="text-slate-200 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Calefacción
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-slate-200 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Tren delantero
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-slate-200 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Electricidad
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-slate-200 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Todos los servicios
-                  </a>
-                </li>
+                {FooterLinks.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      className="text-slate-200 transition hover:text-gray-700/75"
+                      href="/"
+                    >
+                      {item.links.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -176,28 +152,32 @@ function Footer() {
               <strong className="font-medium text-slate-200">Contacto</strong>
 
               <ul className="mt-6 space-y-1 text-sm">
-                <li>
-                  <a className="flex  gap-1.5 rtl:sm:justify-end" href="/">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 shrink-0 text-slate-200"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                {FooterLinks.map((link) =>
+                  link.contacto.map((item) => (
+                    <li key={item.email}>
+                      <a className="flex  gap-1.5 rtl:sm:justify-end" href="/">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 shrink-0 text-slate-200"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          />
+                        </svg>
 
-                    <span className="flex-1 text-slate-200">
-                      info@friocarrosario.com.ar
-                    </span>
-                  </a>
-                </li>
+                        <span className="flex-1 text-slate-200">
+                          info@friocarrosario.com.ar
+                        </span>
+                      </a>
+                    </li>
+                  ))
+                )}
 
                 <li>
                   <a

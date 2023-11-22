@@ -1,17 +1,13 @@
 "use client";
+import * as Constants from "../app/constants";
 import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-const navigation = [
-  { name: "Principal", href: "/" },
-  { name: "Servicios", href: "/servicios" },
-  { name: "Nosotros", href: "/about" },
-  { name: "Contacto", href: "/contacto" },
-];
 //animation import
 import "animate.css";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 export default function Navbar() {
+  const navigation = Constants.Navigation;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -23,7 +19,7 @@ export default function Navbar() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Frio car</span>
               <img src="/logo.png" alt="" width={120} />
             </a>
           </div>
@@ -33,7 +29,7 @@ export default function Navbar() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Abrir menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -42,7 +38,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 px-2 text-white hover:bg-red-900   transition-all"
+                className="text-sm font-semibold leading-6 px-2 text-white hover:text-gray-100 hover:underline   transition-all"
               >
                 {item.name}
               </Link>
