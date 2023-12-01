@@ -1,5 +1,6 @@
+## This is a PAUSED project. 👷🏼‍♀️
 
-## Getting Started
+## Basic Started
 
 First, run the development server:
 
